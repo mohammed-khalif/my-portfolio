@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="imagess/logo.png" class="logo">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li> 
+                <li><a href="#">service</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">contact</a></li>
+              </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>H, i am <span>mohamed</span><br>upcoming software Engerring</h1>
+        </div>
+    </div>
+    </div> 
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imagess/user.png" alt="">
+                </div> 
+                   <div class="about-col-2">
+                    <h1>about me</h1>
+                    <h1 class="sub-title">about me</h1>
+                    <p>I want you to know that you are capable of achieving great things. It may not always be easy, but with hard work, perseverance, and a positive attitude, you can overcome any obstacle that comes your way.
+
+                        Remember, success is not just about talent, it's about putting in the effort and pushing through the challenges. So, whether you're pursuing a new career, starting a new project, or just striving to be your best self, keep pushing forward and don't give up.
+                        
+                        Believe in yourself and your abilities, and never let anyone else tell you that you can't achieve your dreams. Surround yourself with supportive people who will lift you up and encourage you along the way.
+                        
+                        In the words of Nelson Mandela, "It always seems impossible until it's done." So, keep going, keep striving, and remember that anything is possible with determination and hard work. </p>
+                   </div class="tab-titles">
+
+                   <p class="tab-links active-link" onclick="opentab('skills')">skills</p>   
+                   <p class="tab-links" on click="opentab('Experience')"  >Experience</p>   
+                   <p class="tab-links" onclick="opentab(Education)">Education</p>
+                 </div>
+                 <div class="tab contents active-tab" id="skills" >
+                    <ul>
+                        <li>UI/UX</span><br>Desingning web/apps</datagrid</li> 
+                        <li><span>web development</span><br>Desingning web/apps</datagrid</li>
+                        <li><span>app development</span><br>Desingning web/apps</datagrid</li>
+
+                 </ul>
+                 </div>
+                 <div class="tab contents" id="Experience">
+                    <ul>
+                        <li><span>2021 -current</span><br>UI/UX Design Training at moringa</li>li>
+                        <li><span>2019 - 2021</span><br>team leader.</li>
+                        <li><span>2016 - 2019</span><br>internship.</li>
+
+
+                    </ul>
+                    </div>
+                    <div class="tab contents" id="Education">
+                        <ul>
+                            <li>2016</span><br>Desingning web/apps</datagrid</li> 
+                            <li><span>2016</span><br>Desingning web/apps</datagrid</li>
+                            <li><span>2014</span><br>Desingning web/apps</datagrid</li>
+    
+    
+          </ul>             
+         </div>              
+        </div>
+    </div>
+   </div>
+   <script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-links");
+    var tablinks =document.getElementsByClassName("tab-links");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add(active-tab)
+    }
+    
+    
+   </script>
+</body> 
+</html> 
